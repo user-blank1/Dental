@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove any default margin to prevent unwanted spacing */
+}
+
+#main {
+    flex-grow: 1;
+    /* This will make sure the main content takes up available space */
+    border: 1px solid black;
+}
+
+footer {
+    /* Ensure the footer is always at the bottom */
+    background-color: black;
+    margin-top: auto;
+}
+
+#logo-img {
+    width: 20%;
+}
+.col-12 li {
+    list-style-type: none; /* Removes the default dot */
+}
+
+.col-12 li a,
+.col-12 li {
+    position: relative;
+    padding-left: 20px; /* Space for the custom dot */
+}
+
+.col-12 li a::before,
+.col-12 .li::before {
+    content: "\2022"; /* Unicode for bullet point (dot) */
+    color: white; /* Custom dot color */
+    position: absolute;
+    left: 0;
+    top: -3px;
+    font-size: 20px; /* Adjust the size of the dot */
+}
+
+@media (max-width: 768px) {
+    #img-wrap {
+        width: 15%;
+    }
+    .navbar-nav {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #footer-img {
+        width: 15%;
+    }
+}
+
+@media (min-width: 769px) {
+    #img-wrap {
+        width: 9%;
+    }
+    .navbar-nav {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #footer-img {
+        width: 10%;
+    }
+}
+@media (min-width: 992px) {
+    #img-wrap {
+        width: 7%;
+    }
+    .navbar-nav {
+        width: fit-content;
+        margin: unset;
+    }
+    #footer-img {
+        width: 7%;
+    }
+}
