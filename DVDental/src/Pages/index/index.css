@@ -1,0 +1,94 @@
+#index-wrap {
+    height: 90vh;
+    background-image: url("../../assets/imgs/background.webp");
+    background-size: cover;
+    background-position: center;
+}
+.carousel-control-prev-icon {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-control-next-icon {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    box-shadow: 0 0 10px black;
+}
+.col-btn {
+    text-decoration: none;
+    font-size: 1.9rem;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn1 {
+    color: black;
+    font-weight: 600;
+    border: 2px solid black;
+}
+.btn1:hover {
+    background-color: rgba(136, 136, 136, 0.5);
+}
+.btn1:active {
+    background-color: rgba(85, 85, 85, 0.5);
+}
+.btn2 {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+.btn2:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+@media (max-width: 768px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .carousel-item img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    #col-1 {
+        height: 50% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .carousel-item img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    #col-1 {
+        height: 50% !important;
+    }
+}
+@media (min-width: 1025px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .carousel-item img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    #col-1 {
+        height: 90% !important;
+    }
+}

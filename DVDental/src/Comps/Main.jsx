@@ -6,13 +6,13 @@ import logo from "../assets/imgs/logo.png";
 function Main() {
     return (
         <div id="main-wrap">
-            <nav className="navbar navbar-expand-lg bg-secondary bg-opacity-50">
+            <nav className="navbar navbar-expand-lg bg-bg-body-tertiary bg-opacity-50">
                 <div className="container-fluid d-flex flex-wrap flex-column flex-sm-row gap-2 gap-sm-0">
                     <div className="d-flex  align-items-center" id="nav-brand">
                         <a className="navbar-brand fs-2 fw-bold" href="#">
                             DVDental
                         </a>
-                        <div id="logo-wrap">
+                        <div id="logo-wrap" className="d-none d-sm-block">
                             <img src={logo} alt="" className="img-fluid shadow rounded-2" />
                         </div>
                         <div className="d-flex flex-row flex-md-column ms-2 gap-2 " id="nav-icons">
